@@ -7,22 +7,36 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Bellybutton Biodiversity</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <style>
+    .jumbotron {
+      /* background-color: lavenderblush; */
+      background-image: url("https://previews.123rf.com/images/peshkov/peshkov1705/peshkov170500452/78679961-macro-virus-bacteria-wallpaper-medicine-concept-3d-rendering.jpg");
+    }
+
+    p {
+      background: white;
+    }
+  </style>
+
 </head>
 
 <body>
 
   <div class="container">
-    <div class="row">
+    <div class="row0">
 
+      <!-- JUMBOTRON -->
       <div class="col-md-12 jumbotron text-center">
         <h1>Belly Button Biodiversity Dashboard</h1>
         <p>Use the interactive charts below to explore the dataset</p>
       </div>
-
     </div>
-    <div class="row">
 
-      <div class="col-md-2">
+    <div class="row1">
+
+      <!-- METADATA AND DROPDOWN MENU -->
+      <div class="col-md-4">
         <div class="well">
           <h5>Test Subject ID No.:</h5>
           <!-- <select id="selDataset"></select> -->
@@ -37,23 +51,40 @@
         </div>
       </div>
 
-      <div class="col-md-5">
-        <div id="bar"></div>
+      <!-- GAUGE CHART -->
+      <div class="col-md-8">
+        <div id="gauge">
+          <h5>The gauge chart shows how many times a week the subject washes their belly button.</h5>
+        </div>
       </div>
-      <div class="col-md-5">
-        <div id="gauge"></div>
-      </div>
+
     </div>
-    <div class="row">
+
+    <div class="row2">
+      <!-- BAR CHART -->
+      <div class="col-md-12">
+        <div id="bar">
+        </div>
+        <h5>The bar chart shows the top 10 most abundant bacteria found in the belly button of the subject. Hovering over each bar will highlight the bacteria OTU ID, and display the common names of each bacteria and the number of bacteria found.</h5>
+      </div>
+
+    </div>
+
+    <div class="row3">
+
+      <!-- BUBBLE CHART -->
       <div class="col-md-12">
         <div id="bubble"></div>
+        <h5>The bubble chart shows the number of bacteria cultures per each type of bacteria. The bigger the bubble means a higher number of bacteria cultures were found. Hovering over the bubbles will show the OTU ID, the number of samples found, and the common name for that type of bacteria.</h5>
       </div>
     </div>
+
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="plots.js"></script>
+  <!-- <script src="plots.js"></script> -->
+  <script src="static/js/charts.js"></script>
 
 </body>
 

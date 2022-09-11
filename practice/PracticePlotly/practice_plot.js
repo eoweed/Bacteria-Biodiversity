@@ -137,4 +137,7 @@ console.log(sliceIntegers);
 // return remaining values starting from position 3
 var words = ['seal', 'dog', 'scorpion', 'orangutan', 'salamander'];
 var sliceWords = words.slice(3, );
-console.log(sliceWords);
+console.log("slice", sliceWords);
+
+
+
