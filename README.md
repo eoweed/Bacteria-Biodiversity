@@ -12,3 +12,9 @@
 
 ![Webpage Screenshot](https://github.com/eoweed/Bacteria_Biodiversity/blob/main/static/images/Webpage_Screenshot.png)
 
+
+### Software:
+###### JavaScript ES6
+###### Plotly 1.58.5
+###### D3 5.5.0
+###### Bootstrap 3.3.7
