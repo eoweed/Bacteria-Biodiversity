@@ -6,3 +6,6 @@
 ###### The webpage contains a dropdown menu to select the volunteer ID number and displays a table of metadata and three charts. A gauge chart displays the washing habits of the volunteer. The other two charts show the different types of bacteria and the number of bacteria cultures found for the selected volunteer.
 
 [Link to Webpage](https://eoweed.github.io/Bacteria_Biodiversity/)
+
+![Webpage Screenshot](https://github.com/eoweed/Bacteria_Biodiversity/blob/main/static/images/Webpage_Screenshot.png)
+
