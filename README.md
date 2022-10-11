@@ -7,5 +7,8 @@
 
 [Link to Webpage](https://eoweed.github.io/Bacteria_Biodiversity/)
 
+#
+### Screenshot of Webpage:
+
 ![Webpage Screenshot](https://github.com/eoweed/Bacteria_Biodiversity/blob/main/static/images/Webpage_Screenshot.png)
 
