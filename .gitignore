@@ -1,4 +1,5 @@
 # my files to ignore
+practice/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
