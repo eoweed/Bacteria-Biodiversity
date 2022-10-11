@@ -86,7 +86,8 @@ function init() {
       // Create the layout for the bar chart 
       var barLayout = {
         title: "Top 10 Bacteria Cultures",
-        xaxis: {title: "Sample Values", font: {size: 10}}
+        xaxis: {title: "Sample Values", font: {size: 10}},
+        paper_bgcolor: "lavender"
       };
       // Use Plotly to plot the data with the layout
       Plotly.newPlot("bar", barData, barLayout)
@@ -108,8 +109,9 @@ function init() {
       var bubbleLayout = {
           title: "All Bacteria Cultures Found",
           xaxis: {title: "OTU IDs"},
-          yaxis: {title: "Sample Values"},
-          hovermode: 'closest'
+          yaxis: {title: "Sample Values", mirror: true},
+          hovermode: 'closest',
+          paper_bgcolor: "lavender"
       };
       // Use Plotly to plot the data with the layout
       Plotly.newPlot("bubble", bubbleData, bubbleLayout); 
@@ -129,7 +131,7 @@ function init() {
             type: "indicator",
             mode: "gauge+number",
             value: wfreq,
-            title: { text: "Belly Button Weekly Washing Frequency", font: { size: 24 } },
+            title: { text: "Belly Button Weekly Washing Frequency", font: { size: 16 } },
             gauge: {
               axis: { range: [0, 10], tickwidth: 1, tickcolor: "black" },
               bar: { color: "navy", thickness: 0.5 },
@@ -148,7 +150,9 @@ function init() {
       var layout = {
         width: 500,
         height: 400,
+        paper_bgcolor: "lavender"
       };
+      
       // Use Plotly to plot the gauge data and layout.
       Plotly.newPlot("gauge", gaugeData, layout);
 
